@@ -12,12 +12,13 @@ vmware-user-suid-wrapper &
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
+bspc config top_padding 30
 bspc config border_width         2
 bspc config window_gap           4
 
 bspc config split_ratio          0.50
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
 bspc config single_monocle       true
 
 #bspc config normal_border_color "#000000"
@@ -32,5 +33,3 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 feh --bg-fill ~/Wallpapers/ber.jpg &
-
-
